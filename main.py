@@ -120,7 +120,7 @@ add_info_to_product(product_items, f"{skipped_conds} conditions skipped in pictu
 # == GENERATE HTML REPORT ==
 if evokeds:
     report.add_evokeds(evokeds=evokeds, titles=titles)
-    report.save('out_report/report.html', overwrite=True)
+    report.save('out_report/report.html', overwrite=True, verbose=False)
     print("HTML report saved to out_report/report.html")
 
 # == CREATE PRODUCT.JSON ==

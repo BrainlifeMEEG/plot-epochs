@@ -1,5 +1,37 @@
 # Plot Average ERPs by Condition
 
+<!-- brainlife-app:begin (generated from the App manifest; edit the manifest, not this block) -->
+
+> **Averages epoched MEG/EEG data per condition with MNE-Python and plots each evoked response (butterfly plus topographies), outputting PNG figures and an HTML report.**
+
+Computes Epochs.average() for every event type in the epochs and draws Evoked.plot_joint figures, collected in an HTML report with dataset statistics. Use it as a visual check of ERPs/ERFs after epoching. It takes no parameters.
+
+| | |
+|---|---|
+| 📥 **Inputs** | `neuro/meeg/mne/epochs` |
+| 📤 **Outputs** | `report/html` |
+| 🐳 **Container** | `brainlifemeeg/mne:1.12.1` |
+| ⚙️ **Resources** | 1 CPUs · 20 GB memory · 0.25 h walltime |
+| 🔗 **Run it** | [doi.org/10.25663/brainlife.app.894](https://doi.org/10.25663/brainlife.app.894) |
+
+#### 📥 Inputs
+
+| Input | Datatype | Required | Description |
+|---|---|---|---|
+| `epo` | `neuro/meeg/mne/epochs` | yes | Epoched MEG/EEG data in MNE epochs .fif format, with event labels for each condition. |
+
+#### 📤 Outputs
+
+| Output | Datatype | Description |
+|---|---|---|
+| `out_report` | `report/html` | HTML report with the evoked response of every condition. |
+
+📚 **References used by this App:**
+- Hayashi S, Caron BA, Heinsfeld AS, et al. brainlife.io: a decentralized and open-source cloud platform to support neuroscience research. Nat Methods 21:809-813 (2024). [doi:10.1038/s41592-024-02237-2](https://doi.org/10.1038/s41592-024-02237-2)
+- Gramfort A, et al. MEG and EEG data analysis with MNE-Python. Front Neurosci 7:267 (2013). [doi:10.3389/fnins.2013.00267](https://doi.org/10.3389/fnins.2013.00267)
+
+<!-- brainlife-app:end -->
+
 [![Run on Brainlife.io](https://img.shields.io/badge/Brainlife-bl.app.894-blue.svg)](https://doi.org/10.25663/brainlife.app.894)
 
 ## Description
